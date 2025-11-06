@@ -320,8 +320,8 @@ p {
 }
 
 .menu a {
-  padding: 1rem;
-  font-size: 1.4rem;
+  padding: 0.75rem;
+  font-size: 1.3rem;
   font-weight: bold;
   text-align: center;
   text-decoration: none;
@@ -355,7 +355,7 @@ p {
     pointer-events: auto;
   }
   .menu a {
-    padding: 0 1rem;
+    padding: 0.6rem 1rem;
   }
 
   .menu a:hover {
@@ -518,9 +518,9 @@ progress::-moz-progress-bar {
 .section-title {
   border-top: thin solid var(--first-color);
   border-bottom: thin solid var(--first-color);
-  width: 300px;
-  margin: 2rem auto;
-  padding: 0.5rem 1rem;
+  width: 250px;
+  margin: 2rem 0.05vw;
+  padding: 0.5rem 0.5rem;
   text-align: center;
   color: var(--title-color);
 }
@@ -625,9 +625,10 @@ progress::-moz-progress-bar {
 .nombre {
   color: var(--first-color);
   font-weight: bold;
-  font-size: 1.25rem;
+  font-size: 1rem;
   padding: 1rem;
   text-decoration: none;
+
   transition: all 0.7s ease-in-out;
 }
 .nombre :hover {
@@ -653,8 +654,8 @@ progress::-moz-progress-bar {
 }
 
 .service-card {
-  margin: 1rem 2rem;
-  padding: 1rem;
+  margin: 1rem 0.8rem;
+  padding: 1rem 0.5rem;
   text-align: center;
 }
 
@@ -683,6 +684,29 @@ progress::-moz-progress-bar {
 
 /*media querie para version tablet ancho superior de pantalla a 768px*/
 @media screen and (min-width: 768px) {
+  .nombre {
+    color: var(--first-color);
+    font-weight: bold;
+    font-size: 1.25rem;
+    padding: 1rem;
+    text-decoration: none;
+
+    transition: all 0.7s ease-in-out;
+  }
+  .nombre :hover {
+    color: var(--white-color);
+  }
+
+  .section-title {
+    border-top: thin solid var(--first-color);
+    border-bottom: thin solid var(--first-color);
+    width: 300px;
+    margin: 2rem auto;
+    padding: 0.5rem 1rem;
+    text-align: center;
+    color: var(--title-color);
+  }
+
   .services > .container {
     display: -ms-grid;
     display: grid;
@@ -699,6 +723,13 @@ progress::-moz-progress-bar {
     -ms-grid-column-span: 2;
     grid-column: span 2;
   }
+
+  .service-card {
+    margin: 1rem 2rem;
+    padding: 1rem 1rem;
+    text-align: center;
+  }
+
   .portfolio-grid {
     grid-template-columns: repeat(1, 70vw);
   }
@@ -725,6 +756,29 @@ progress::-moz-progress-bar {
     height: calc(var(--header-height) - 0.5rem);
   }
 
+  .nombre {
+    color: var(--first-color);
+    font-weight: bold;
+    font-size: 1.25rem;
+    padding: 1rem;
+    text-decoration: none;
+
+    transition: all 0.7s ease-in-out;
+  }
+  .nombre :hover {
+    color: var(--white-color);
+  }
+
+  .section-title {
+    border-top: thin solid var(--first-color);
+    border-bottom: thin solid var(--first-color);
+    width: 300px;
+    margin: 2rem auto;
+    padding: 0.5rem 1rem;
+    text-align: center;
+    color: var(--title-color);
+  }
+
   .services > .container {
     /* -ms-grid-columns: (30%) [3]; */
     grid-template-columns: repeat(3, 30%);
@@ -734,8 +788,14 @@ progress::-moz-progress-bar {
     -ms-grid-column-span: 3;
     grid-column: span 3;
   }
+
+  .service-card {
+    margin: 1rem 2rem;
+    padding: 1rem 1rem;
+    text-align: center;
+  }
+
   .portfolio-grid {
     grid-template-columns: repeat(1, 60vw);
   }
 }
-
